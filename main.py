@@ -51,6 +51,10 @@ data_insert = Filme(titulo = 'Emanuelle', ano = '1985', genero = 'terror')
 session.add(data_insert)
 session.commit()
 session.close()
+data_insert = Filme(titulo = 'robinson', ano = '1987', genero = 'comédia')
+session.add(data_insert)
+session.commit()
+session.close()
 
 #remoção do banco
 session.query(Filme).filter(Filme.id == '7').delete()
